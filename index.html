@@ -53,7 +53,7 @@
 
     <!-- FIXED BACKGROUND IMAGE LAYER -->
     <div class="fixed inset-0 z-[-1]">
-        <!-- The Background Image (Kept as image for performance, but you can change to video if desired) -->
+        <!-- The Background Image -->
         <img src="background.jpg" 
              alt="Game Background" 
              class="w-full h-full object-cover opacity-30"
@@ -105,10 +105,10 @@
     <!-- Hero Section -->
     <section class="pt-32 pb-8 md:pt-48 md:pb-12 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
                 Game Producer <br />
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
-                    Live-Ops & F2P
+                    Mobile Production - F2P & Live-Ops
                 </span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
@@ -186,7 +186,7 @@
                                 <img src="solitaire.jpg" alt="Solitaire Candy World" class="w-full h-full object-cover" onerror="this.style.display='none'">
                             </video>
                             
-                            <!-- Gradient Overlay (pointer-events-none allows interaction with video if needed, though mostly visual here) -->
+                            <!-- Gradient Overlay -->
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent pointer-events-none"></div>
                             <div class="absolute bottom-4 left-6 md:left-8 pointer-events-none">
                                 <span class="bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block">Flagship Title</span>
@@ -274,7 +274,6 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Cat Wool -->
                 <div class="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full group">
-                    <!-- CHANGED: Replaced h-64 with aspect-[2/3] for portrait view -->
                     <div class="aspect-[2/3] w-full bg-slate-900 overflow-hidden relative border-b border-slate-700">
                          <!-- VIDEO: Streamed from GitHub -->
                         <video autoplay loop muted playsinline poster="catwool.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -315,7 +314,6 @@
 
                 <!-- Gem Clicker -->
                 <div class="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full group">
-                     <!-- CHANGED: Replaced h-64 with aspect-[2/3] for portrait view -->
                      <div class="aspect-[2/3] w-full bg-slate-900 overflow-hidden relative border-b border-slate-700">
                          <!-- VIDEO: Streamed from GitHub -->
                         <video autoplay loop muted playsinline poster="gem.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -355,7 +353,6 @@
 
                 <!-- Apple Clicker -->
                 <div class="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full group">
-                     <!-- CHANGED: Replaced h-64 with aspect-[2/3] for portrait view -->
                      <div class="aspect-[2/3] w-full bg-slate-900 overflow-hidden relative border-b border-slate-700">
                          <!-- VIDEO: Streamed from GitHub -->
                         <video autoplay loop muted playsinline poster="apple.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -479,12 +476,48 @@
     <section id="journey" class="py-20 px-6">
         <div class="max-w-4xl mx-auto">
             <div class="mb-12 text-center">
-                <!-- CHANGED: Title updated as requested -->
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Games That I Have Worked On</h2>
                 <div class="w-20 h-1 bg-amber-500 mx-auto mb-4"></div>
                 <p class="text-slate-400 max-w-2xl mx-auto">From Quality Engineering to owning live Free-to-Play games</p>
             </div>
             
+            <!-- AUTO-SCROLLING SLIDER -->
+            <div id="gallery-container" class="relative w-full overflow-hidden py-10 bg-slate-900/50 border-y border-slate-800 mb-12">
+                <!-- Fade edges -->
+                <div class="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-slate-950 to-transparent pointer-events-none"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-slate-950 to-transparent pointer-events-none"></div>
+                
+                <!-- Scrolling Track (Changed: removed animate-scroll, added ID) -->
+                <div id="gallery-track" class="flex w-max">
+                    <!-- Image Set 1 -->
+                    <div class="flex space-x-6 px-3">
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(9).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(8).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(7).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(5).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(4).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(3).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(2).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(12).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(11).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(10).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                    </div>
+                    <!-- Image Set 2 (Duplicate for loop) -->
+                    <div class="flex space-x-6 px-3">
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(9).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(8).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(7).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(5).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(4).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(3).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(2).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(12).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(11).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                         <img src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/image%20(10).png" class="h-48 w-auto rounded-lg shadow-md border border-slate-700 object-cover" alt="Game Screenshot" />
+                    </div>
+                </div>
+            </div>
+
             <div class="mt-12 ml-4 md:ml-0 max-w-3xl mx-auto">
                 
                 <!-- Journey Item: Producer (Solitaire) -->
@@ -729,6 +762,73 @@
                 navbar.classList.add('py-6');
             }
         });
+
+        // Interactive Gallery Scroll
+        const track = document.getElementById('gallery-track');
+        const container = document.getElementById('gallery-container');
+        
+        let currentX = 0;
+        let speed = 0.5; // Default slow auto-scroll speed
+        let targetSpeed = 0.5;
+        
+        // Mouse movement logic
+        container.addEventListener('mousemove', (e) => {
+            const rect = container.getBoundingClientRect();
+            const x = e.clientX - rect.left; // Mouse X position within container
+            const width = rect.width;
+            
+            const leftZone = width * 0.25;  // Left 25% of container
+            const rightZone = width * 0.75; // Right 25% of container (starts at 75%)
+            
+            if (x < leftZone) {
+                // Mouse is on the Left side -> Scroll content to the Right (speed negative)
+                // Calculate intensity: closer to edge = faster
+                const intensity = 1 - (x / leftZone);
+                targetSpeed = - (2 + (intensity * 6)); // Max speed -8
+            } else if (x > rightZone) {
+                // Mouse is on the Right side -> Scroll content to the Left (speed positive)
+                const intensity = (x - rightZone) / (width - rightZone);
+                targetSpeed = 2 + (intensity * 6); // Max speed 8
+            } else {
+                // Mouse in the middle -> Pause scroll
+                targetSpeed = 0; 
+            }
+        });
+
+        // Reset speed when mouse leaves the area
+        container.addEventListener('mouseleave', () => {
+            targetSpeed = 0.5;
+        });
+
+        function animateGallery() {
+            // Smoothly interpolate current speed towards target speed
+            speed += (targetSpeed - speed) * 0.1;
+            
+            currentX -= speed;
+            
+            // Infinite Scroll Logic
+            // The content is duplicated (2 sets of images). 
+            // We scroll smoothly. When we've scrolled past exactly half the width (one full set),
+            // we seamlessly jump back to 0 (or forward if scrolling other way).
+            
+            const totalWidth = track.scrollWidth;
+            const halfWidth = totalWidth / 2;
+            
+            // If scrolling left (speed > 0) and we've gone past half width
+            if (currentX <= -halfWidth) {
+                currentX += halfWidth;
+            } 
+            // If scrolling right (speed < 0) and we've gone past the start (0)
+            else if (currentX > 0) {
+                currentX -= halfWidth;
+            }
+            
+            track.style.transform = `translateX(${currentX}px)`;
+            requestAnimationFrame(animateGallery);
+        }
+        
+        // Start the animation loop
+        animateGallery();
     </script>
 
 </body>
