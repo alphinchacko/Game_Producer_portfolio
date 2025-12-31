@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphin Chacko - Game Producer Portfolio</title>
+    <meta name="description" content="Game Producer Portfolio for Alphin Chacko - Specializing in F2P, Live-Ops, and Mobile Game Production.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#151e2e', // Custom darker slate for contrast
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans selection:bg-amber-500/30 selection:text-amber-200 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white tracking-tight flex items-center group">
+                <i data-lucide="gamepad-2" class="text-amber-500 mr-2 group-hover:rotate-12 transition-transform"></i>
+                <span>ALPHIN CHACKO</span>
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-sm font-medium text-slate-400 hover:text-amber-500 transition-colors">About</a>
+                <a href="#projects" class="text-sm font-medium text-slate-400 hover:text-amber-500 transition-colors">Projects</a>
+                <a href="#skills" class="text-sm font-medium text-slate-400 hover:text-amber-500 transition-colors">Expertise</a>
+                <a href="#journey" class="text-sm font-medium text-slate-400 hover:text-amber-500 transition-colors">Journey</a>
+                <a href="#contact" class="text-sm font-medium text-slate-400 hover:text-amber-500 transition-colors">Contact</a>
+                <a href="Alphin_Chacko_Game_producer_F2P.pdf" download="Alphin_Chacko_Game_producer_F2P.pdf" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium rounded-lg transition-colors border border-slate-700 flex items-center">
+                    <i data-lucide="download" class="w-4 h-4 mr-2"></i> Resume
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-slate-900 border-b border-slate-800 py-4 px-6 shadow-xl flex flex-col space-y-4">
+            <a href="#about" class="text-slate-300 hover:text-amber-500 py-2 block">About</a>
+            <a href="#projects" class="text-slate-300 hover:text-amber-500 py-2 block">Projects</a>
+            <a href="#skills" class="text-slate-300 hover:text-amber-500 py-2 block">Expertise</a>
+            <a href="#journey" class="text-slate-300 hover:text-amber-500 py-2 block">Journey</a>
+            <a href="#contact" class="text-slate-300 hover:text-amber-500 py-2 block">Contact</a>
+            <a href="Alphin_Chacko_Game_producer_F2P.pdf" download="Alphin_Chacko_Game_producer_F2P.pdf" class="text-amber-500 font-medium py-2 block flex items-center">
+                <i data-lucide="download" class="w-4 h-4 mr-2"></i> Download Resume
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-8 md:pt-48 md:pb-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
+                Game Producer <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
+                    Live-Ops & F2P
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                I deliver Free-to-Play mobile games from <span class="text-white">concept to global launch</span>. 
+                Specializing in Live-Ops monetization, data-driven product decisions, and sustainable team leadership.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 bg-amber-600 hover:bg-amber-700 text-white rounded-lg font-bold transition-all shadow-lg shadow-amber-900/20 flex items-center justify-center">
+                    View Production Case Studies
+                </a>
+                <a href="Alphin_Chacko_Game_producer_F2P.pdf" download="Alphin_Chacko_Game_producer_F2P.pdf" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-medium border border-slate-700 transition-all flex items-center justify-center">
+                    <i data-lucide="download" class="w-4 h-4 mr-2"></i> Download Resume
+                </a>
+            </div>
+
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 border-t border-slate-800 pt-8">
+                <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-1">6+ Years</div>
+                    <div class="text-sm text-slate-500 uppercase tracking-wide">Experience in Game Development</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-1">F2P & Live-Ops</div>
+                    <div class="text-sm text-slate-500 uppercase tracking-wide"></div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-1">0 → 1</div>
+                    <div class="text-sm text-slate-500 uppercase tracking-wide">Game Launches</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-white mb-1">iOS & Android</div>
+                    <div class="text-sm text-slate-500 uppercase tracking-wide">Platforms</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="pt-8 pb-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mb-4"></div>
+            </div>
+            <div class="text-slate-300 text-lg leading-relaxed space-y-6 text-center md:text-left">
+                <p>
+                    Game Producer with 6+ years of experience in mobile game development, spanning QA, technical production, and game production. I specialize in Free-to-Play casual and hybrid-casual games, taking products from concept to global launch (0 → 1) and scaling them through Live-Ops, experimentation, and data-driven execution.
+                </p>
+                <p>
+                    I own roadmaps, Live-Ops cadence, release planning, and A/B testing, working closely with cross-functional teams and publishing partners to deliver high-quality games on time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flagship Case Study -->
+    <section id="projects" class="py-20 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-12 flex items-center space-x-4">
+                <div class="h-px bg-slate-700 flex-grow"></div>
+                <span class="text-amber-500 font-bold uppercase tracking-widest text-sm">Games that i have worked on</span>
+                <div class="h-px bg-slate-700 flex-grow"></div>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-12 items-start">
+                <div class="md:col-span-12">
+                    <!-- Flagship Card -->
+                    <div class="bg-slate-800/50 rounded-xl border border-amber-500/50 shadow-lg shadow-amber-900/10 overflow-hidden hover:border-amber-400/50 transition-all duration-300 h-full flex flex-col">
+                        <div class="p-6 md:p-8 flex-grow">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">Solitaire Candy World</h3>
+                                    <p class="text-amber-500 font-medium text-sm mt-1">Lead Game Producer • Casual Card Game</p>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <i data-lucide="smartphone" class="w-5 h-5 text-slate-400"></i>
+                                </div>
+                            </div>
+
+                            <p class="text-slate-300 mb-6 leading-relaxed">Took ownership of the product from early concept through global launch. Built a sustainable content pipeline delivering 1,000+ levels and implemented a robust Live-Ops calendar that significantly boosted retention and LTV.</p>
+
+                            <!-- Metrics -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 bg-slate-900/50 p-4 rounded-lg border border-slate-700/50">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-emerald-400">42%</div>
+                                    <div class="text-xs text-slate-500 uppercase tracking-wider">D1 Retention</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-emerald-400">17%</div>
+                                    <div class="text-xs text-slate-500 uppercase tracking-wider">D7 Retention</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-emerald-400">$1.24</div>
+                                    <div class="text-xs text-slate-500 uppercase tracking-wider">ARPDAU</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-blue-400">70K+</div>
+                                    <div class="text-xs text-slate-500 uppercase tracking-wider">Installs</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Key Responsibilities</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start text-slate-300 text-sm">
+                                        <i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>
+                                        <span>Managed the entire 0-to-1 release lifecycle, securing a publishing partnership with Kwalee.</span>
+                                    </li>
+                                    <li class="flex items-start text-slate-300 text-sm">
+                                        <i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>
+                                        <span>Orchestrated 53+ releases and 60+ A/B tests to optimize economy and engagement.</span>
+                                    </li>
+                                    <li class="flex items-start text-slate-300 text-sm">
+                                        <i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>
+                                        <span>Managed store presence and ASO asset updates.</span>
+                                    </li>
+                                    <li class="flex items-start text-slate-300 text-sm">
+                                        <i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>
+                                        <span>Designed and managed the Live-Ops calendar: Season Passes, VIP Subs, and events.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-wrap mt-auto gap-2">
+                                <span class="px-3 py-1 rounded-full text-xs font-medium border bg-amber-900/30 text-amber-400 border-amber-500/30">Product Ownership</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium border bg-amber-900/30 text-amber-400 border-amber-500/30">Live-Ops Strategy</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium border bg-amber-900/30 text-amber-400 border-amber-500/30">Economy Design</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium border bg-amber-900/30 text-amber-400 border-amber-500/30">A/B Testing</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-medium border bg-amber-900/30 text-amber-400 border-amber-500/30">Publishing Relations</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-slate-900/50 p-4 border-t border-slate-700/50 flex justify-end">
+                            <a href="https://play.google.com/store/apps/details?id=com.superhugestudios.candyworld.free.harvest" target="_blank" rel="noopener noreferrer" class="flex items-center text-sm font-medium text-amber-500 hover:text-amber-400 transition-colors">
+                                View on Store <i data-lucide="rocket" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Grid -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Cat Wool -->
+                <div class="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full">
+                    <div class="p-6 md:p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-100">Cat Wool</h3>
+                                <p class="text-amber-500 font-medium text-sm mt-1">Game Producer • Casual / Puzzle</p>
+                            </div>
+                            <div class="flex space-x-2">
+                                <i data-lucide="smartphone" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 mb-6 leading-relaxed">A cozy casual puzzle game focusing on relaxing mechanics. Managed sprint planning and art pipelines to ensure a consistent aesthetic and stable release cadence.</p>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Key Responsibilities</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start text-slate-300 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>Coordinated cross-functional teams (Art, Dev, QA).</li>
+                                <li class="flex items-start text-slate-300 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>Created a Hybrid Casual game success testing pipeline.</li>
+                                <li class="flex items-start text-slate-300 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>Managed store presence and ASO asset updates.</li>
+                                <li class="flex items-start text-slate-300 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>Implemented analytics hooks to track puzzle difficulty and drop-off rates.</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap mt-auto gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">Sprint Planning</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">Production & QA</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 border-t border-slate-700/50 flex justify-end">
+                        <a href="https://play.google.com/store/apps/details?id=com.superhuge.catwool" target="_blank" class="flex items-center text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                            View on Store <i data-lucide="rocket" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gem Clicker -->
+                <div class="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full">
+                    <div class="p-6 md:p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-100">Gem Clicker</h3>
+                                <p class="text-amber-500 font-medium text-sm mt-1">Game Producer • Idle / Simulation</p>
+                            </div>
+                            <div class="flex space-x-2">
+                                <i data-lucide="smartphone" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 mb-6 leading-relaxed">An idle mining simulation game. Focused on balancing the core economic loop and optimizing ad-monetization placements for maximum ARPDAU without hurting retention.</p>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Key Responsibilities</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start text-slate-300 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>Balanced economy spreadsheets for progression pacing.</li>
+                                <li class="flex items-start text-slate-300 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>Managed QA cycles to ensure crash-free performance on low-end devices.</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap mt-auto gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">Idle Economy</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">Production & QA</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">SDK Integration</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 border-t border-slate-700/50 flex justify-end">
+                        <a href="https://play.google.com/store/apps/details?id=com.superhuge.cookie" target="_blank" class="flex items-center text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                            View on Store <i data-lucide="rocket" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Apple Clicker -->
+                <div class="bg-slate-800/50 rounded-xl border border-slate-700 overflow-hidden hover:border-slate-600 transition-all duration-300 flex flex-col h-full">
+                    <div class="p-6 md:p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-100">Apple Clicker</h3>
+                                <p class="text-amber-500 font-medium text-sm mt-1">Game Producer • Idle / Arcade</p>
+                            </div>
+                            <div class="flex space-x-2">
+                                <i data-lucide="smartphone" class="w-5 h-5 text-slate-400"></i>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 mb-6 leading-relaxed">Fast-paced idle clicker. Owned the update roadmap and localized content delivery for global markets.</p>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Key Responsibilities</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start text-slate-300 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-amber-500 mr-2 flex-shrink-0 mt-0.5"></i>Maintained 99% crash-free rate across all updates.</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap mt-auto gap-2">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">Localization</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">Roadmap Management</span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium border bg-slate-800 text-slate-300 border-slate-700">Production & QA</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 border-t border-slate-700/50 flex justify-end">
+                        <a href="https://play.google.com/store/apps/details?id=com.superhuge.free.apple" target="_blank" class="flex items-center text-sm font-medium text-slate-400 hover:text-white transition-colors">
+                            View on Store <i data-lucide="rocket" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900 border-y border-slate-800 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Production Arsenal</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mb-4"></div>
+                <p class="text-slate-400 max-w-2xl mx-auto">My approach combines agile methodologies with data-driven decision making to deliver profitable games.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Product & Business -->
+                <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700/50 hover:bg-slate-800/50 transition-colors">
+                    <div class="flex items-center mb-4 text-amber-500">
+                        <i data-lucide="trending-up" class="w-6 h-6 mr-3"></i>
+                        <h3 class="font-bold text-lg text-white">Product & Business</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">F2P Monetization</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Economy Design</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Live-Ops Strategy</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">KPI Analysis (LTV, ARPDAU)</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">A/B Testing</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Market Research</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Publisher Relations</span>
+                    </div>
+                </div>
+
+                <!-- Production Management -->
+                <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700/50 hover:bg-slate-800/50 transition-colors">
+                    <div class="flex items-center mb-4 text-amber-500">
+                        <i data-lucide="layers" class="w-6 h-6 mr-3"></i>
+                        <h3 class="font-bold text-lg text-white">Production Management</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Agile & Scrum</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Sprint Planning</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Roadmap Ownership</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Risk Management</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Capacity Planning</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">JIRA/Confluence</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Cross-functional Leadership</span>
+                    </div>
+                </div>
+
+                <!-- Technical & Tools -->
+                <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700/50 hover:bg-slate-800/50 transition-colors">
+                    <div class="flex items-center mb-4 text-amber-500">
+                        <i data-lucide="smartphone" class="w-6 h-6 mr-3"></i>
+                        <h3 class="font-bold text-lg text-white">Technical & Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Unity</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Firebase</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Amplitude</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Google Play Console</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">App Store Connect</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Git/Version Control</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">CI/CD Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-slate-800/30 p-6 rounded-xl border border-slate-700/50 hover:bg-slate-800/50 transition-colors">
+                    <div class="flex items-center mb-4 text-amber-500">
+                        <i data-lucide="users" class="w-6 h-6 mr-3"></i>
+                        <h3 class="font-bold text-lg text-white">Soft Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Stakeholder Management</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Conflict Resolution</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Remote Team Leadership</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Crisis Management</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Mentor & Coach</span>
+                        <span class="bg-slate-900 text-slate-300 px-3 py-1.5 rounded text-sm border border-slate-700">Radical Candor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Journey -->
+    <section id="journey" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">My Game Development Journey</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mb-4"></div>
+                <p class="text-slate-400 max-w-2xl mx-auto">From Quality Engineering to owning live Free-to-Play games</p>
+            </div>
+            
+            <div class="mt-12 ml-4 md:ml-0 max-w-3xl mx-auto">
+                
+                <!-- Journey Item: Producer (Solitaire) -->
+                <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-amber-500 text-slate-950 shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="gamepad-2" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                        <div class="w-0.5 flex-grow mt-2 bg-amber-500 transition-all duration-500 group-hover:opacity-100 opacity-40"></div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-amber-500/50 bg-gradient-to-r from-amber-900/10 to-transparent transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-amber-500">2023 – Present</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Super Huge Studios</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Super Huge Studios</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-white">Game Producer & QA Lead — Solitaire Candy World</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-amber-500"></span>0 → 1 launch and Live-Ops execution</li>
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-amber-500"></span>Roadmap, releases, and quality ownership</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item: Producer (Cat Wool) -->
+                <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-amber-500 text-slate-950 shadow-[0_0_15px_rgba(245,158,11,0.3)] transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="gamepad-2" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                        <div class="w-0.5 flex-grow mt-2 bg-amber-500 transition-all duration-500 group-hover:opacity-100 opacity-40"></div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-amber-500/50 bg-gradient-to-r from-amber-900/10 to-transparent transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-amber-500">2025 – Present</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Super Huge Studios</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Super Huge Studios</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-white">Game Producer & QA Lead — Cat Wool</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-amber-500"></span>Own end-to-end production and Live-Ops</li>
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-amber-500"></span>Lead QA strategy and release quality</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item: Lead (Apple Clicker) -->
+                <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-slate-900 text-blue-400 border border-blue-500/50 transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="shield" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                        <div class="w-0.5 flex-grow mt-2 bg-blue-500/30 transition-all duration-500 group-hover:opacity-100 opacity-40"></div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-blue-500/30 bg-blue-900/5 transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-blue-400">2024</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Super Huge Studios</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Super Huge Studios</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-slate-200">Senior Test Engineer & Production — Apple Clicker</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-slate-600"></span>QA leadership with production ownership exposure</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item: Lead (Gem Clicker) -->
+                <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-slate-900 text-blue-400 border border-blue-500/50 transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="shield" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                        <div class="w-0.5 flex-grow mt-2 bg-blue-500/30 transition-all duration-500 group-hover:opacity-100 opacity-40"></div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-blue-500/30 bg-blue-900/5 transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-blue-400">2023</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Super Huge Studios</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Super Huge Studios</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-slate-200">Senior Test Engineer (QA Lead) & Production — Gem Clicker / Master Chef Slider</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-slate-600"></span>QA leadership for live casual titles</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item: Lead (Chess) -->
+                <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-slate-900 text-blue-400 border border-blue-500/50 transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="shield" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                        <div class="w-0.5 flex-grow mt-2 bg-blue-500/30 transition-all duration-500 group-hover:opacity-100 opacity-40"></div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-blue-500/30 bg-blue-900/5 transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-blue-400">2023</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Super Huge Studios</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Super Huge Studios</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-slate-200">Test Engineer (QA Lead) — Chess Blitz / Chess Legends</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-slate-600"></span>Owned QA execution for live multiplayer games</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item: QA (Indium) -->
+                <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-slate-900 text-slate-500 border border-slate-700 transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="search" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                        <div class="w-0.5 flex-grow mt-2 bg-slate-800 transition-all duration-500 group-hover:opacity-100 opacity-40"></div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-slate-700 bg-slate-800/20 transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-slate-500">2021 – 2022</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Indium Software</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Indium Software</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-slate-400">Test Engineer — Willy Wonka (Zynga), Wizard of Magic Match</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-slate-600"></span>QA on large-scale live Match-3 games</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                 <!-- Journey Item: Lead (PTW) -->
+                 <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-slate-900 text-blue-400 border border-blue-500/50 transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="shield" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                        <div class="w-0.5 flex-grow mt-2 bg-blue-500/30 transition-all duration-500 group-hover:opacity-100 opacity-40"></div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-blue-500/30 bg-blue-900/5 transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-blue-400">2020 – 2021</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Pole To Win International</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Pole To Win International</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-slate-200">Game Test Engineer (POD Lead) — Zynga Poker</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-slate-600"></span>Led QA POD, client coordination, and delivery</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item: QA (PTW) -->
+                <div class="flex group">
+                    <div class="flex flex-col items-center mr-4 md:mr-8 relative">
+                        <div class="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center z-10 bg-slate-900 text-slate-500 border border-slate-700 transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                             <i data-lucide="search" class="w-4 h-4 md:w-5 md:h-5"></i>
+                        </div>
+                    </div>
+                    <div class="flex-grow pb-10">
+                         <div class="p-5 md:p-6 rounded-xl border border-slate-700 bg-slate-800/20 transition-all duration-300 hover:border-opacity-100 hover:translate-x-1">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                                <span class="text-xs font-bold uppercase tracking-wider mb-1 sm:mb-0 text-slate-500">2019</span>
+                                <span class="text-xs text-slate-500 font-medium hidden sm:block">Pole To Win International</span>
+                            </div>
+                            <div class="sm:hidden text-xs text-slate-500 font-medium mb-2">Pole To Win International</div>
+                            <h3 class="text-lg md:text-xl font-bold mb-2 text-slate-400">Associate QA Engineer — Tiny Royale (Zynga)</h3>
+                            <ul class="space-y-1">
+                                <li class="text-slate-400 text-sm flex items-start"><span class="w-1 h-1 rounded-full mt-2 mr-2 flex-shrink-0 bg-slate-600"></span>Entry into live mobile game development</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-slate-900 to-slate-950 border-t border-slate-800 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-12">Contact</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:alphinchackopp@gmail.com" class="flex items-center justify-center px-6 py-4 bg-amber-600 hover:bg-amber-700 text-white rounded-lg font-bold transition-colors">
+                    <i data-lucide="mail" class="mr-2 w-5 h-5"></i> alphinchackopp@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/alphin-chacko-b62861122/" target="_blank" rel="noreferrer" class="flex items-center justify-center px-6 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-lg border border-slate-700 transition-colors">
+                    <i data-lucide="linkedin" class="mr-2 w-5 h-5"></i> LinkedIn Profile
+                </a>
+            </div>
+            
+            <div class="mt-16 text-slate-600 text-sm">
+                © <script>document.write(new Date().getFullYear())</script> Alphin Chacko. Built for the love of games.
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts for Interactivity -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-slate-950/90', 'backdrop-blur-md', 'border-b', 'border-slate-800', 'py-3');
+                navbar.classList.remove('py-6');
+            } else {
+                navbar.classList.remove('bg-slate-950/90', 'backdrop-blur-md', 'border-b', 'border-slate-800', 'py-3');
+                navbar.classList.add('py-6');
+            }
+        });
+    </script>
+
+</body>
+</html>
