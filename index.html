@@ -265,6 +265,9 @@
                     </div>
                 </div>
             </div>
+
+            <div class="grid md:grid-cols-12 gap-12 items-start mt-12">
+            </div>
         </div>
     </section>
 
@@ -735,6 +738,12 @@
 
     <!-- Scripts for Interactivity -->
     <script>
+        // Force page to start at top
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
         // Initialize Icons
         lucide.createIcons();
 
