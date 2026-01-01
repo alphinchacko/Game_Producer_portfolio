@@ -188,7 +188,8 @@
                     <!-- Flagship Card -->
                     <div class="bg-slate-800/50 rounded-xl border border-amber-500/50 shadow-lg shadow-amber-900/10 overflow-hidden hover:border-amber-400/50 transition-all duration-300 h-full flex flex-col group">
                         <!-- Flagship Video Banner -->
-                        <div class="h-[550px] w-full bg-slate-900 overflow-hidden relative border-b border-slate-700">
+                        <!-- CHANGED: Replaced fixed h-[550px] with responsive aspect-[2/3] for mobile scaling, keeping fixed height for desktop -->
+                        <div class="w-full bg-slate-900 overflow-hidden relative border-b border-slate-700 aspect-[2/3] md:aspect-auto md:h-[550px]">
                             <!-- VIDEO: Streamed from GitHub -->
                             <video autoplay loop muted playsinline poster="solitaire.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                                 <source src="https://raw.githubusercontent.com/alphinchacko/Game_Producer_portfolio/main/Assets/Sol.mp4" type="video/mp4">
